@@ -73,20 +73,20 @@ module.exports = {
     );
 
     logger.info("To get started:");
-    if (isNewFolder) logger.info("cd " + answers.folderName);
+    if (isNewFolder) logger.info("cd " + context.folderName);
 
     const logFiles = {
       component: path.relative(
-        answers.folderName,
-        path.resolve(answers.folderName, 'src', answers.name, answers.name + '.vue')
+        context.folderName,
+        path.resolve(context.folderName, 'src', answers.name, answers.name + '.vue')
       ),
       componentDoc: path.relative(
-        answers.folderName,
-        path.resolve(answers.folderName, 'src', answers.name, answers.name + '.md')
+        context.folderName,
+        path.resolve(context.folderName, 'src', answers.name, answers.name + '.md')
       ),
       usage: path.relative(
-        answers.folderName,
-        path.resolve(answers.folderName, 'docs/*.md')
+        context.folderName,
+        path.resolve(context.folderName, 'docs/*.md')
       )
     }
     logger.info("1. Install dependencies: npm install");
