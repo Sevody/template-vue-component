@@ -1,7 +1,64 @@
-# <%= name %>
+# {{ name }}
 
-> <%= description %>
+> {{ description }}
+
+# Usage
+
+## ES6 Modules / CommonJS
+
+```bash
+$ npm run build
+```
+
+```js
+import {{ camelcaseName }} from 'dist/{{ name }}';
+
+Vue.component('{{ name }}', {{ camelcaseName }});
+```
+
+```html
+<{{name}} text="Hello World!"></{{name}}>
+```
+
+## UMD
+
+```bash
+$ npm run build:umd
+```
+
+```html
+<{{name}} text="Hello World!"></{{name}}>
+
+<script src="https://unpkg.com/vue" charset="utf-8"></script>
+<script src="./dist/{{ name }}.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+  Vue.component('{{ name }}', window.{{ camelcaseName }});
+</script>
+```
+
+## Installation
+
+### Using yarn
+
+`yarn add {{ name }}`
+
+### Using npm
+
+`npm i --save {{ name }}`
+
+## Demo and Docs
+
+`npm run serve`
+
+## Tests
+
+This template uses karma with chai by default, you can change test settings in poi.config.js
+
+`npm run test`
+`npm run test:watch`
+`npm run test:cov`
 
 ## License
 
-MIT &copy; <%= username %>
+This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License)

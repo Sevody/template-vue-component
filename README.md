@@ -12,16 +12,41 @@ yarn global add sao
 npm i -g sao
 ```
 
-### From npm
-
-```bash
-sao vue-component my-project
-```
-
 ### From git
 
 ```bash
-sao sevody/template-vue-component my-project
+$ sao sevody/template-vue-component my-component
+$ cd my-component
+$ npm install
+$ npm run serve
+```
+
+### Linting
+
+```bash
+$ npm run lint
+```
+
+### Testing & Test Coverage
+
+```bash
+$ npm run test
+$ npm run test:watch
+$ npm run test:cov
+```
+
+### Building
+
+#### ES6 Modules / CommonJS
+
+```bash
+$ npm run build
+```
+
+#### UMD
+
+```bash
+$ npm run build:umd
 ```
 
 ## License
