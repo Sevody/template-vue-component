@@ -7,6 +7,7 @@ function camelcase(str) {
 }
 
 module.exports = {
+  template: 'handlebars',
   prompts: {
     name: {
       message: 'Component name in kebab-case format',
