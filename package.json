@@ -1,0 +1,25 @@
+{
+  "name": "template-vue-component",
+  "version": "0.0.0",
+  "description": "SAO vue standalone component template",
+  "repository": {
+    "url": "sevody/template-vue-component",
+    "type": "git"
+  },
+  "author": "sevody <sevody@gmail.com> (github.com/sevody)",
+  "license": "MIT",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "sao": "^0.22.1"
+  }
+}
